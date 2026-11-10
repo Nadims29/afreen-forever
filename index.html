@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090d" />
+  <meta name="description" content="A private birthday experience made with love for Afreen — 11.11.2026." />
+  <title>11:11 — For Afreen, Always</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#09090d;--panel:#121218;--gold:#d9bd83;--gold2:#f0dfb8;--muted:#a9a5a0;--white:#f7f2e9;--line:rgba(217,189,131,.22);--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:var(--sans);font-weight:300;overflow-x:hidden}button,input,textarea{font:inherit}button{cursor:pointer}
+    .grain{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+    .stars{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.star{position:absolute;width:2px;height:2px;background:#f7e8c8;border-radius:50%;opacity:.5;animation:twinkle 4s ease-in-out infinite alternate}@keyframes twinkle{to{opacity:.12;transform:scale(.55)}}@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(217,189,131,.08)}50%{box-shadow:0 0 50px rgba(217,189,131,.22)}}@keyframes rotate{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-9px)}}
+    .wrap{position:relative;z-index:1}.nav{position:fixed;top:0;left:0;right:0;z-index:15;padding:19px 5vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,rgba(9,9,13,.92),transparent);backdrop-filter:blur(8px)}.brand{font-family:var(--serif);letter-spacing:.18em;color:var(--gold2);font-size:18px}.nav small{font-size:10px;letter-spacing:.25em;color:#c8b991;text-transform:uppercase}.sound{border:1px solid var(--line);background:rgba(15,15,21,.6);color:var(--gold2);padding:9px 14px;border-radius:30px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    section{padding:110px 7vw;position:relative}.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:120px;overflow:hidden;background:radial-gradient(ellipse at 50% 52%,rgba(107,78,48,.18),transparent 48%),linear-gradient(180deg,#0b0b12,#09090d)}.hero-photo{position:absolute;inset:0;z-index:0;overflow:hidden}.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;opacity:0;transform:scale(1.06);transition:opacity 2s ease,transform 8s ease}.hero-photo img.active{opacity:.48;transform:scale(1)}.hero:before{content:"";position:absolute;width:min(78vw,700px);aspect-ratio:1;border:1px solid rgba(217,189,131,.15);border-radius:50%;box-shadow:0 0 0 35px rgba(217,189,131,.018),0 0 0 90px rgba(217,189,131,.012);animation:glow 8s infinite}.hero:after{content:"";position:absolute;width:min(52vw,450px);aspect-ratio:1;border:1px solid rgba(217,189,131,.11);border-radius:50%}
+    .hero-inner{position:relative;z-index:2;max-width:850px;animation:rise 1.5s both}.eyebrow{font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(66px,13vw,150px);line-height:.82;letter-spacing:-.045em;margin:0;color:var(--gold2)}.hero h1 span{display:block;font-size:.38em;letter-spacing:.32em;text-transform:uppercase;margin-top:30px;color:#f7f0e4}.hero p{max-width:510px;margin:38px auto 32px;color:#c4beb5;line-height:1.9;font-size:14px}.primary{background:linear-gradient(120deg,#d7b879,#f0dfb8);color:#18140e;border:0;border-radius:2px;padding:15px 28px;letter-spacing:.16em;text-transform:uppercase;font-size:10px;font-weight:600;transition:.3s}.primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px #d9bd8333}.scrollhint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.3em;color:#8d8578;text-transform:uppercase}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 55px}.kicker{color:var(--gold);font-size:9px;letter-spacing:.35em;text-transform:uppercase}.section-head h2{font-family:var(--serif);font-size:clamp(42px,6vw,72px);font-weight:300;line-height:1;margin:16px 0;color:var(--gold2)}.section-head p{color:var(--muted);font-size:13px;line-height:1.9}
+    .story{background:linear-gradient(180deg,#0c0c12,#111016 50%,#0b0b10)}.timeline{max-width:850px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:linear-gradient(transparent,var(--gold),transparent)}.moment{width:50%;padding:0 48px 60px 0;position:relative}.moment:nth-child(even){margin-left:50%;padding:0 0 60px 48px}.moment:after{content:"";position:absolute;right:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px #d9bd83}.moment:nth-child(even):after{right:auto;left:-4px}.moment .date{font-size:9px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase}.moment h3{font-family:var(--serif);font-size:31px;font-weight:400;margin:10px 0}.moment p{color:#aaa39b;font-size:12px;line-height:1.8;margin:0}.editable-note{display:block;margin-top:12px;color:#756e64;font-size:10px;font-style:italic}
+    .gallery{background:#0b0b10}.gallery-tools{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:-20px auto 32px}.upload-label,.soft-btn{border:1px solid var(--line);color:var(--gold2);background:transparent;padding:12px 17px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}.upload-label:hover,.soft-btn:hover{background:#d9bd8312}.upload-label input{display:none}.gallery-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.photo{min-height:250px;aspect-ratio:4/5;border:1px solid var(--line);background:linear-gradient(145deg,#26222a,#111117);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:#82796c}.photo img,.photo video{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo-caption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 13px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#f1dfbb;font-family:var(--serif);font-size:19px;z-index:2}.photo .placeholder{padding:22px;z-index:1}.photo .placeholder b{display:block;font-family:var(--serif);font-size:26px;font-weight:300;color:#c7b58f;margin-bottom:8px}.photo .placeholder span{font-size:9px;letter-spacing:.18em;text-transform:uppercase}.photo .remove{position:absolute;right:8px;top:8px;z-index:3;background:#09090dcc;border:1px solid #ffffff33;color:white;padding:6px 9px;font-size:10px}
+    .reasons{background:radial-gradient(ellipse at center,#19151a,#0b0b10 65%)}.reason-card{max-width:650px;min-height:250px;margin:auto;border:1px solid var(--line);background:linear-gradient(145deg,#19171d,#101015);display:flex;align-items:center;justify-content:center;text-align:center;padding:45px;position:relative;animation:glow 6s infinite}.reason-number{font-size:9px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}.reason-text{font-family:var(--serif);font-size:clamp(30px,5vw,47px);line-height:1.12;color:var(--gold2);margin:20px 0}.reason-controls{display:flex;justify-content:center;gap:12px;margin-top:25px}
+    .letter{background:#111016}.letter-paper{max-width:760px;margin:auto;padding:clamp(28px,6vw,65px);background:linear-gradient(135deg,#eee3cc,#d8c6a4);color:#29221a;box-shadow:0 25px 90px #0008;position:relative}.letter-paper:before{content:"";position:absolute;inset:12px;border:1px solid #8c7650aa;pointer-events:none}.letter-paper .to{font-family:var(--serif);font-size:25px;color:#8b6c3c}.letter-paper h3{font-family:var(--serif);font-size:42px;font-weight:400;margin:10px 0 24px}.letter-paper p{font-family:var(--serif);font-size:19px;line-height:1.65;color:#443a2c}.signature{font-family:var(--serif);font-size:28px;font-style:italic;color:#795b34;margin-top:30px}
+    .video-section{background:radial-gradient(ellipse at center,#1b1718,#09090d 68%)}.video-box{max-width:780px;margin:auto;border:1px solid var(--line);padding:12px;background:#111}.video-stage{aspect-ratio:16/9;background:linear-gradient(135deg,#24202a,#0a0a0f);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}.video-stage video{width:100%;height:100%;object-fit:contain;background:#000}.video-placeholder{padding:25px}.video-placeholder .play{width:58px;height:58px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;color:var(--gold);font-size:18px}.video-placeholder h3{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--gold2)}.video-placeholder p{font-size:11px;color:#a7a09a;line-height:1.8}.video-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}.video-actions input{display:none}
+    .finale{min-height:75vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 45%,#33261f 0%,#100f14 45%,#09090d 75%)}.heart{font-size:45px;color:var(--gold);animation:float 3s ease-in-out infinite}.finale h2{font-family:var(--serif);font-size:clamp(55px,10vw,110px);font-weight:300;line-height:.9;color:var(--gold2);margin:25px 0}.finale .promise{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3vw,30px);max-width:700px;line-height:1.45;color:#ded2bd}.finale .date{font-size:10px;letter-spacing:.3em;color:var(--gold);margin-top:35px}
+    footer{padding:28px;text-align:center;color:#716b64;font-size:9px;letter-spacing:.22em;text-transform:uppercase;border-top:1px solid #ffffff0d}.modal{position:fixed;inset:0;background:#000d;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-card{max-width:500px;width:100%;background:#15141a;border:1px solid var(--line);padding:30px;text-align:center}.modal-card h3{font-family:var(--serif);font-size:34px;color:var(--gold2);font-weight:300}.modal-card p{color:#aaa;font-size:12px;line-height:1.8}.modal-card input{width:100%;margin:12px 0;padding:12px;background:#09090d;border:1px solid var(--line);color:white}.close{background:transparent;border:0;color:#b8a57f;margin-top:15px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;background:#d9bd83;color:#17130d;padding:12px 18px;font-size:11px;z-index:40;transition:.3s}.toast.show{opacity:1;transform:translate(-50%,0)}.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:700px){.nav{padding:15px 5vw}.nav small{display:none}section{padding:85px 6vw}.hero{min-height:92svh}.hero p{font-size:12px;padding:0 10px}.timeline:before{left:7px}.moment,.moment:nth-child(even){width:100%;margin:0;padding:0 0 42px 35px}.moment:after,.moment:nth-child(even):after{left:3px;right:auto}.gallery-grid{grid-template-columns:repeat(2,1fr);gap:9px}.photo{min-height:190px}.reason-card{min-height:220px;padding:28px 18px}.letter-paper p{font-size:17px}.brand{font-size:15px}}
+    @media(max-width:390px){.gallery-grid{grid-template-columns:1fr}.photo{aspect-ratio:5/4}}
+  </style>
+</head>
+<body>
+<div class="grain"></div><div class="stars" id="stars"></div>
+<div class="wrap">
+  <nav class="nav"><div class="brand">11:11 <span style="color:#76664c">/</span> A FOREVER PROMISE</div><small>Made for Afreen · 11 November 2026</small><button class="sound" id="soundBtn" type="button">♪ Sound off</button></nav>
+  <section class="hero" id="home">
+    <div class="hero-photo" aria-hidden="true"><img src="assets/beach-together.webp" class="active" alt=""><img src="assets/wedding-day.webp" alt=""><img src="assets/lake-day.webp" alt=""><img src="assets/selfie-together.webp" alt=""></div>
+    <div class="hero-inner">
+      <div class="eyebrow">A little universe, made only for you</div>
+      <h1>Afreen<span>you are my always</span></h1>
+      <p>Some people make life beautiful just by being in it. This little world is for the person who made my world feel like home.</p>
+      <button class="primary" id="beginBtn">Enter our story <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="scrollhint">Scroll to discover · ↓</div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="section-head reveal"><div class="kicker">Chapter one · The beginning</div><h2>Every love has a story.<br>Ours is my favourite.</h2><p>These chapters are placeholders for your real milestones. Edit them in the page to make every detail yours.</p></div>
+    <div class="timeline">
+      <article class="moment reveal"><div class="date">The beginning</div><h3>When our worlds met</h3><p>The day an ordinary moment became the beginning of something extraordinary. Add the place, date and the detail you still remember.</p><span class="editable-note">Your memory belongs here.</span></article>
+      <article class="moment reveal"><div class="date">A little later</div><h3>The moment I knew</h3><p>That quiet realisation that you were not just someone in my life — you were someone I wanted in every version of it.</p><span class="editable-note">Replace this with your own moment.</span></article>
+      <article class="moment reveal"><div class="date">Our forever began</div><h3>From me and you to us</h3><p>A promise, a partnership, a home in another person. The best part of the story is that we are still writing it.</p><span class="editable-note">Add your wedding day memory.</span></article>
+      <article class="moment reveal"><div class="date">Today · 11.11.2026</div><h3>Still choosing you</h3><p>Not just on birthdays or special days. In the ordinary mornings, difficult seasons, small victories and all the days in between.</p><span class="editable-note">The next chapter is ours to write.</span></article>
+    </div>
+  </section>
+
+  <section class="gallery" id="memories">
+    <div class="section-head reveal"><div class="kicker">Chapter two · Little pieces of forever</div><h2>Our memories,<br>kept close.</h2><p>Add your favourite photographs and videos. They stay in this browser session; download a backup or keep the original files safe.</p></div>
+    <div class="gallery-tools">
+      <label class="upload-label">＋ Add photos / videos <input id="memoryInput" type="file" accept="image/*,video/*" multiple></label>
+      <button class="soft-btn" id="clearMemories">Clear this gallery</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="photo"><img src="assets/beach-together.webp" alt="A beach memory together"><div class="photo-caption">Where the waves met our story</div></div>
+      <div class="photo"><img src="assets/afreen-beach.webp" alt="Afreen at the beach"><div class="photo-caption">A moment I keep close</div></div>
+      <div class="photo"><img src="assets/wedding-day.webp" alt="Our wedding day"><div class="photo-caption">The day we became us</div></div>
+      <div class="photo"><img src="assets/little-moment.webp" alt="A candid memory"><div class="photo-caption">The little things</div></div>
+      <div class="photo"><img src="assets/selfie-together.webp" alt="A selfie together"><div class="photo-caption">My favourite company</div></div>
+      <div class="photo"><img src="assets/lake-day.webp" alt="A day by the water"><div class="photo-caption">Another page in our story</div></div>
+      <div class="photo"><img src="assets/close-together.webp" alt="A close-up memory"><div class="photo-caption">Right where I belong</div></div>
+      <div class="photo"><img src="assets/beach-selfie.webp" alt="A seaside selfie"><div class="photo-caption">A day worth remembering</div></div>
+      <div class="photo"><img src="assets/cafe-memory.webp" alt="A cafe memory"><div class="photo-caption">Ordinary days, treasured</div></div>
+      <div class="photo"><img src="assets/seaside-memory.webp" alt="A seaside memory"><div class="photo-caption">And a thousand more</div></div>
+    </div>
+  </section>
+
+  <section class="reasons" id="reasons">
+    <div class="section-head reveal"><div class="kicker">Chapter three · A thousand little things</div><h2>One of my reasons<br>to love you.</h2><p>Tap to reveal another reason. Add your own personal reasons in the script's reasons list.</p></div>
+    <div class="reason-card reveal"><div><div class="reason-number" id="reasonCount">Reason 01 / 20</div><div class="reason-text" id="reasonText">Because even an ordinary day feels special when I get to share it with you.</div><button class="primary" id="nextReason">Reveal another reason ↗</button></div></div>
+  </section>
+
+  <section class="letter" id="letter">
+    <div class="section-head reveal"><div class="kicker">Chapter four · A letter, without an occasion</div><h2>Words I hope<br>you keep.</h2></div>
+    <div class="letter-paper reveal">
+      <div class="to">My dearest Afreen,</div>
+      <h3>Happy Birthday, my love.</h3>
+      <p>I wish I could put into words what you mean to me. You are woven into the smallest parts of my everyday life — in the things that make me smile, in the plans I make, and in the future I imagine.</p>
+      <p>I know life will not always be perfect. There will be days when we are tired, days when words fall short, and days that ask more of us than we expected. On every one of those days, I want you to know this: I am on your side. I want to keep learning you, listening to you, laughing with you and choosing you.</p>
+      <p>Thank you for being you. I do not promise a perfect life. I promise my effort, my honesty, my patience, and a love that keeps showing up.</p>
+      <p>May this year bring you peace, health, laughter and all the beautiful things your heart has been quietly wishing for.</p>
+      <div class="signature">Always yours.</div>
+    </div>
+  </section>
+
+  <section class="video-section" id="message">
+    <div class="section-head reveal"><div class="kicker">Chapter five · Hear it from me</div><h2>A message,<br>in my own words.</h2><p>Record or upload a personal birthday video. This section is designed for your voice and face — the part no website template can replace.</p></div>
+    <div class="video-box reveal"><div class="video-stage" id="videoStage"><div class="video-placeholder"><div class="play">▶</div><h3>A message just for you</h3><p>Your video will appear here.<br>Choose a video from your device to add it to this experience.</p></div></div>
+      <div class="video-actions"><label class="upload-label">＋ Upload my video <input id="videoInput" type="file" accept="video/*"></label><button class="soft-btn" id="recordBtn">● Record a video</button><button class="soft-btn" id="removeVideo">Remove video</button></div>
+    </div>
+  </section>
+
+  <section class="finale" id="forever">
+    <div class="heart">✧</div><div class="kicker">The last page · The next thousand chapters</div>
+    <h2>To my<br>forever, Afreen.</h2>
+    <p class="promise">“If I had to find my way to you a thousand times, I would. In every lifetime, in every version of tomorrow — I would still choose you.”</p>
+    <div class="date">11 · 11 · 2026 &nbsp; — &nbsp; AND EVERY DAY AFTER</div>
+  </section>
+  <footer>Made with love · A private birthday experience for Afreen · 11:11</footer>
+</div>
+
+<div class="modal" id="recordModal"><div class="modal-card"><h3>Record your message</h3><p>Allow camera and microphone access. Your recording stays on this device until you download it or refresh the page.</p><video id="cameraPreview" autoplay muted playsinline style="width:100%;background:#000;max-height:250px"></video><div class="video-actions"><button class="primary" id="startRecording">Start recording</button><button class="soft-btn" id="stopRecording" disabled>Stop & use video</button></div><button class="close" id="closeModal">Close</button></div></div>
+<div class="toast" id="toast"></div>
+<script>
+  const $ = s => document.querySelector(s);
+  const toast = msg => {const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)};
+  // Ambient stars
+  for(let i=0;i<85;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*5+'s';s.style.animationDuration=(2+Math.random()*5)+'s';$('#stars').appendChild(s)}
+  // Opening slideshow from the bundled couple photographs.
+  const heroSlides=[...document.querySelectorAll('.hero-photo img')];let heroIndex=0;setInterval(()=>{if(heroSlides.length>1){heroSlides[heroIndex].classList.remove('active');heroIndex=(heroIndex+1)%heroSlides.length;heroSlides[heroIndex].classList.add('active')}},5200);
+  // Smooth reveal
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal,.moment').forEach(el=>observer.observe(el));
+  $('#beginBtn').addEventListener('click',()=>$('#story').scrollIntoView({behavior:'smooth'}));
+  // Original ambient instrumental using Web Audio API; starts only after user gesture.
+  let audioCtx=null, master=null, musicOn=false, notesTimer=null, noteIndex=0;
+  const notes=[261.63,329.63,392,493.88,392,329.63,293.66,349.23,440,523.25,440,349.23];
+  function playNote(freq,when,duration){const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(0,when);gain.gain.linearRampToValueAtTime(.045,when+.6);gain.gain.exponentialRampToValueAtTime(.001,when+duration);osc.connect(gain);gain.connect(master);osc.start(when);osc.stop(when+duration+.1)}
+  function startMusic(){if(!audioCtx){audioCtx=new(window.AudioContext||window.webkitAudioContext)();master=audioCtx.createGain();master.gain.value=.38;master.connect(audioCtx.destination)}audioCtx.resume();if(notesTimer)clearInterval(notesTimer);musicOn=true;$('#soundBtn').textContent='♪ Sound on';notesTimer=setInterval(()=>{const now=audioCtx.currentTime;playNote(notes[noteIndex%notes.length],now,3.2);if(noteIndex%3===0)playNote(notes[(noteIndex+3)%notes.length]/2,now,4.5);noteIndex++},1250)}
+  function stopMusic(){if(notesTimer)clearInterval(notesTimer);musicOn=false;$('#soundBtn').textContent='♪ Sound off'}
+  $('#soundBtn').addEventListener('click',()=>musicOn?stopMusic():startMusic());
+  // Reasons
+  const reasons=[
+    'Because you make even the quietest moments feel full.',
+    'Because your smile can change the direction of my whole day.',
+    'Because I can be completely myself around you.',
+    'Because you make a home feel like a person, not a place.',
+    'Because your dreams matter to me as much as my own.',
+    'Because we can laugh at the smallest, silliest things.',
+    'Because you keep teaching me what partnership means.',
+    'Because I want to tell you every little thing that happens.',
+    'Because your presence makes difficult days easier to face.',
+    'Because I admire the person you are becoming.',
+    'Because ordinary routines become memories with you.',
+    'Because I still get excited about our future.',
+    'Because you deserve to feel cherished every single day.',
+    'Because you are my favourite person to come back to.',
+    'Because growing together is a beautiful kind of adventure.',
+    'Because I want to celebrate your wins and hold you through setbacks.',
+    'Because you make me want to be more thoughtful and kind.',
+    'Because there is always something new to love about you.',
+    'Because I choose us — not just once, but every day.',
+    'Because the story is better with you in every chapter.'
+  ];
+  let ri=0;function showReason(){ $('#reasonText').textContent=reasons[ri];$('#reasonCount').textContent=`Reason ${String(ri+1).padStart(2,'0')} / ${reasons.length}`;ri=(ri+1)%reasons.length}
+  $('#nextReason').addEventListener('click',showReason);
+  // Memories gallery, local object URLs
+  let memoryUrls=[];
+  $('#memoryInput').addEventListener('change',e=>{const files=[...e.target.files];files.forEach(file=>{if(!file.type.startsWith('image/')&&!file.type.startsWith('video/'))return;const url=URL.createObjectURL(file);memoryUrls.push(url);const card=document.createElement('div');card.className='photo';let media;if(file.type.startsWith('video/')){media=document.createElement('video');media.src=url;media.controls=true;media.muted=true}else{media=document.createElement('img');media.src=url;media.alt='A memory with Afreen'}const rm=document.createElement('button');rm.className='remove';rm.textContent='Remove';rm.onclick=()=>{URL.revokeObjectURL(url);memoryUrls=memoryUrls.filter(x=>x!==url);card.remove()};card.append(media,rm);$('#galleryGrid').append(card)});e.target.value='';if(files.length)toast('Your memories have been added to this page.')});
+  $('#clearMemories').addEventListener('click',()=>{memoryUrls.forEach(URL.revokeObjectURL);memoryUrls=[];$('#galleryGrid').querySelectorAll('.photo:has(button.remove)').forEach(el=>el.remove());toast('Your added photos were cleared. The original memories remain.')});
+  // Birthday video upload / recording
+  let chosenVideoUrl=null,stream=null,recorder=null,chunks=[];
+  function setVideo(blob){if(chosenVideoUrl)URL.revokeObjectURL(chosenVideoUrl);chosenVideoUrl=URL.createObjectURL(blob);const v=document.createElement('video');v.src=chosenVideoUrl;v.controls=true;v.playsInline=true;$('#videoStage').innerHTML='';$('#videoStage').append(v);toast('Your birthday message is ready to play.')}
+  $('#videoInput').addEventListener('change',e=>{const f=e.target.files[0];if(f)setVideo(f);e.target.value=''});
+  $('#removeVideo').addEventListener('click',()=>{if(chosenVideoUrl)URL.revokeObjectURL(chosenVideoUrl);chosenVideoUrl=null;$('#videoStage').innerHTML='<div class="video-placeholder"><div class="play">▶</div><h3>A message just for you</h3><p>Your video will appear here.</p></div>'});
+  $('#recordBtn').addEventListener('click',async()=>{try{stream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});$('#cameraPreview').srcObject=stream;$('#recordModal').classList.add('show')}catch(err){toast('Camera access was not available. Upload a video file instead.')}});
+  $('#startRecording').addEventListener('click',()=>{chunks=[];recorder=new MediaRecorder(stream);recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};recorder.onstop=()=>{setVideo(new Blob(chunks,{type:recorder.mimeType||'video/webm'}));closeRecorder()};recorder.start();$('#startRecording').disabled=true;$('#stopRecording').disabled=false;toast('Recording started.')});
+  $('#stopRecording').addEventListener('click',()=>{if(recorder&&recorder.state!=='inactive')recorder.stop()});
+  function closeRecorder(){if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;$('#cameraPreview').srcObject=null;$('#recordModal').classList.remove('show');$('#startRecording').disabled=false;$('#stopRecording').disabled=true}
+  $('#closeModal').addEventListener('click',closeRecorder);
+  $('#recordModal').addEventListener('click',e=>{if(e.target.id==='recordModal')closeRecorder()});
+</script>
+</body>
+</html>
